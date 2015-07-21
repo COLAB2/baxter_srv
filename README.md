@@ -1,4 +1,5 @@
 1- create a ros package. Here baxter_srv is the package name
+
        roscreate-pkg baxter_srv std_msgs rospy roscpp baxter_interface  sensor_msgs
        
        rosmake baxter_srv
@@ -7,6 +8,7 @@
 
 
 2-add srv file:
+
        sensor_msgs/Image last_image
 
 
