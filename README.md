@@ -1,13 +1,13 @@
-How to create a ros package? Here baxter_srv is the package name
-roscreate-pkg baxter_srv std_msgs rospy roscpp baxter_interface  sensor_msgs
-rosmake baxter_srv
-adjust your CMakeLists.txt file you have to uncomment rosbuild_genmsg() and rosbuild_gensrv()
-------------------------
+1- create a ros package? Here baxter_srv is the package name
+       roscreate-pkg baxter_srv std_msgs rospy roscpp baxter_interface  sensor_msgs
+       rosmake baxter_srv
+       adjust your CMakeLists.txt file you have to uncomment rosbuild_genmsg() and rosbuild_gensrv()
 
-add srv file:
----
-sensor_msgs/Image last_image
-----------------------------
+
+2-add srv file:
+       sensor_msgs/Image last_image
+
+
 
 Right_hand_camera.py is the serive which should be running constantly and it gets the image from baxter' right-hand camera. 
 
