@@ -28,3 +28,5 @@ To get the last image you should:
 
 An example to use this service is baxter.py in MIDCA/examples in Baxter branch
        
+Getting help from this link:
+http://nildo.github.io/organizer-baxter/
