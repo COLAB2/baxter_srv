@@ -17,13 +17,13 @@ Right_hand_camera.py is the serive which should be running constantly and it get
 
 To get the last image you should:
 
-rospy.wait_for_service('last_image')
+       rospy.wait_for_service('last_image')
 
-self.rightHandCamera = rospy.ServiceProxy('last_image', ImageSrv)
+       self.rightHandCamera = rospy.ServiceProxy('last_image', ImageSrv)
 
-request = self.rightHandCamera()
+       request = self.rightHandCamera()
 
-imgmsg = request.last_image
+       imgmsg = request.last_image
 
 
 An example to use this service is baxter.py in MIDCA/examples in Baxter branch
