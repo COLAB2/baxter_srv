@@ -1,6 +1,8 @@
 1- create a ros package. Here baxter_srv is the package name
        roscreate-pkg baxter_srv std_msgs rospy roscpp baxter_interface  sensor_msgs
+       
        rosmake baxter_srv
+       
        adjust your CMakeLists.txt file you have to uncomment rosbuild_genmsg() and rosbuild_gensrv()
 
 
